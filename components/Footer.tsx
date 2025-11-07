@@ -22,19 +22,29 @@ const Footer = () => {
               <li><Link to="/products" className="hover:text-brand-light-blue transition-colors">Products</Link></li>
               <li><Link to="/gallery" className="hover:text-brand-light-blue transition-colors">Gallery</Link></li>
               <li><Link to="/contact" className="hover:text-brand-light-blue transition-colors">Contact</Link></li>
+              <li><Link to="/order" className="hover:text-brand-light-blue transition-colors">Order Now</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Contact Us</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li className="flex items-start"><LocationMarkerIcon className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />NO 10,OGODOMIZA QUATERS,SOUTH-IBIE EDO STATE NIGERIA</li>
-              <li className="flex items-center"><PhoneIcon className="h-5 w-5 mr-2" />08169661333</li>
-              <li className="flex items-center"><MailIcon className="h-5 w-5 mr-2" />orders@aquamartin.com</li>
+            <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start">
+                    <LocationMarkerIcon className="h-5 w-5 mr-3 mt-1 flex-shrink-0 text-brand-light-blue" />
+                    <span>NO 10, OGODOMIZA QUARTERS, SOUTH-IBIE EDO STATE NIGERIA</span>
+                </li>
+                <li className="flex items-center">
+                    <PhoneIcon className="h-5 w-5 mr-3 flex-shrink-0 text-brand-light-blue" />
+                    <span>08169661333</span>
+                </li>
+                <li className="flex items-center">
+                    <MailIcon className="h-5 w-5 mr-3 flex-shrink-0 text-brand-light-blue" />
+                    <span>aquamartin@gmail.com</span>
+                </li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} Aquamartin Table Water. All Rights Reserved.</p>
+        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Aquamartin Table Water. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
@@ -43,10 +53,10 @@ const Footer = () => {
 
 // SVG Icons
 const WaterDropIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s9.75 11.023 9.75 11.023c.294.262.68.262.974 0 0 0 9.75-4.832 9.75-11.023S17.385 2.25 12 2.25Zm0 16.523c-1.874-2.12-4.18-4.99-4.18-7.773 0-2.43 1.97-4.4 4.4-4.4s4.4 1.97 4.4 4.4c0 2.783-2.306 5.653-4.18 7.773a.75.75 0 0 1-.44 0Z" clipRule="evenodd" />
-    </svg>
-  );
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s9.75 11.023 9.75 11.023c.294.262.68.262.974 0 0 0 9.75-4.832 9.75-11.023S17.385 2.25 12 2.25Zm0 16.523c-1.874-2.12-4.18-4.99-4.18-7.773 0-2.43 1.97-4.4 4.4-4.4s4.4 1.97 4.4 4.4c0 2.783-2.306 5.653-4.18 7.773a.75.75 0 0 1-.44 0Z" clipRule="evenodd" />
+  </svg>
+);
 const LocationMarkerIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />

@@ -68,7 +68,7 @@ const ContactPage = () => {
                     </li>
                     <li className="flex items-center">
                         <MailIcon className="h-6 w-6 mr-3 text-brand-blue" />
-                        <span>orders@aquamartin.com</span>
+                        <span>aquamartin@gmail.com</span>
                     </li>
                 </ul>
             </div>
