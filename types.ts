@@ -7,3 +7,13 @@ export interface Product {
   unit: string;
   imageUrl: string;
 }
+
+export interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  content: string;
+  imageUrl: string;
+  date: string;
+  author: string;
+}
