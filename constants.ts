@@ -45,4 +45,5 @@ export const GALLERY_IMAGES: string[] = [
   'https://picsum.photos/seed/gallery6/600/400',
   'https://picsum.photos/seed/gallery7/600/400',
   'https://picsum.photos/seed/gallery8/600/400',
+  'https://i.ibb.co/MytN14Rv/WIN-20251110-12-36-10-Pro.jpg',
 ];
